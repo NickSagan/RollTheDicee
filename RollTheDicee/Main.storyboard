@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dicee_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RollTheDicee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,87 +19,90 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-LS-h0R">
                                 <rect key="frame" x="-41" y="0.0" width="455" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-o0-jY9">
-                                <rect key="frame" x="103" y="50" width="208" height="316"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="aJu-PW-NYc">
+                                <rect key="frame" x="103" y="210.5" width="208" height="475"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wg2-X7-X46">
-                                        <rect key="frame" x="0.0" y="0.0" width="208" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-o0-jY9">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="316"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="246" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="37R-xl-6qc">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="246" verticalHuggingPriority="251" image="DiceFive" translatesAutoresizingMaskIntoConstraints="NO" id="aQ3-ab-qb0">
-                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
-                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wg2-X7-X46">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="246" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="37R-xl-6qc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="246" verticalHuggingPriority="251" image="DiceFive" translatesAutoresizingMaskIntoConstraints="NO" id="aQ3-ab-qb0">
+                                                        <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m9s-Mf-mgY">
+                                                <rect key="frame" x="0.0" y="108" width="208" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="8R0-G5-y4r">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceFive" translatesAutoresizingMaskIntoConstraints="NO" id="clf-kA-vxT">
+                                                        <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="koK-ux-TOM">
+                                                <rect key="frame" x="0.0" y="216" width="208" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="Ecs-vV-XDm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="100"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceFive" translatesAutoresizingMaskIntoConstraints="NO" id="S23-wx-Tfx">
+                                                        <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m9s-Mf-mgY">
-                                        <rect key="frame" x="0.0" y="108" width="208" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gYr-eG-oeb">
+                                        <rect key="frame" x="20.5" y="366" width="167" height="109"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="8R0-G5-y4r">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceFive" translatesAutoresizingMaskIntoConstraints="NO" id="clf-kA-vxT">
-                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
-                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvR-Xu-48A">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="70"/>
+                                                <color key="backgroundColor" red="0.56480497119999995" green="0.1689142287" blue="0.1675068438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                <state key="normal" title="ROLL">
+                                                    <color key="titleColor" red="0.92549019610000005" green="0.8862745098" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="rollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8de-Jr-HhI"/>
+                                                </connections>
+                                            </button>
+                                            <segmentedControl opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="5" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-Cy-Deh">
+                                                <rect key="frame" x="0.0" y="78" width="167" height="32"/>
+                                                <color key="backgroundColor" red="1" green="0.98559467349999996" blue="0.97985330530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <segments>
+                                                    <segment title="1"/>
+                                                    <segment title="2"/>
+                                                    <segment title="3"/>
+                                                    <segment title="4"/>
+                                                    <segment title="5"/>
+                                                    <segment title="6"/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="numberOfDices:" destination="BYZ-38-t0r" eventType="valueChanged" id="W3t-OH-r1A"/>
+                                                </connections>
+                                            </segmentedControl>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="koK-ux-TOM">
-                                        <rect key="frame" x="0.0" y="216" width="208" height="100"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="Ecs-vV-XDm">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="100"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceFive" translatesAutoresizingMaskIntoConstraints="NO" id="S23-wx-Tfx">
-                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gYr-eG-oeb">
-                                <rect key="frame" x="117" y="393.5" width="180" height="109"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvR-Xu-48A">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="70"/>
-                                        <color key="backgroundColor" red="0.56480497119999995" green="0.1689142287" blue="0.1675068438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                        <state key="normal" title="Бросить">
-                                            <color key="titleColor" red="0.92549019610000005" green="0.8862745098" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="rollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8de-Jr-HhI"/>
-                                        </connections>
-                                    </button>
-                                    <segmentedControl opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="5" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-Cy-Deh">
-                                        <rect key="frame" x="0.0" y="78" width="180" height="32"/>
-                                        <color key="backgroundColor" red="1" green="0.98559467349999996" blue="0.97985330530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <segments>
-                                            <segment title="1"/>
-                                            <segment title="2"/>
-                                            <segment title="3"/>
-                                            <segment title="4"/>
-                                            <segment title="5"/>
-                                            <segment title="6"/>
-                                        </segments>
-                                        <color key="selectedSegmentTintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <action selector="numberOfDices:" destination="BYZ-38-t0r" eventType="valueChanged" id="W3t-OH-r1A"/>
-                                        </connections>
-                                    </segmentedControl>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xCd-o0-jY9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="WSn-jL-LTa"/>
                             <constraint firstItem="wLS-LS-h0R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="dio-Ix-vvL"/>
-                            <constraint firstItem="gYr-eG-oeb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fus-Cd-N8h"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gYr-eG-oeb" secondAttribute="trailing" constant="117" id="hM1-fV-bki"/>
+                            <constraint firstItem="aJu-PW-NYc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gaM-aG-gWD"/>
+                            <constraint firstItem="aJu-PW-NYc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjy-CM-zVZ"/>
                             <constraint firstAttribute="bottom" secondItem="wLS-LS-h0R" secondAttribute="bottom" id="ifE-Gx-EqI"/>
-                            <constraint firstItem="xCd-o0-jY9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u6M-Qh-hkf"/>
                             <constraint firstItem="wLS-LS-h0R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-61" id="y15-Qh-Od0"/>
                             <constraint firstItem="wLS-LS-h0R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zwR-NV-iKF"/>
                         </constraints>
