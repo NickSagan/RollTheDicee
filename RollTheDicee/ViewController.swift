@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentedCtrl: UISegmentedControl!
     
     @IBAction func rollButton(_ sender: UIButton) {
-    // rollDices()
+    rollDices()
     }
     @IBAction func numberOfDices(_ sender: UISegmentedControl) {
         let x = segmentedCtrl.selectedSegmentIndex
@@ -70,10 +70,13 @@ class ViewController: UIViewController {
                 dice6.isHidden = false
         }
     }
-  
-
-
-
+    func rollDices(){
+        let diceArray = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")]
+        dice1.image = diceArray.randomElement() // possible way to get random element from array
+        dice2.image = diceArray[Int.random(in: 0..<5)] // one more possible way to get random element from array
+        dice3.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")][Int.random(in: 0..<5)]//and one more way to get random element from array
+        dice4.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")][Int.random(in: 0..<5)]
+        dice5.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")][Int.random(in: 0..<5)]
+        dice6.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")][Int.random(in: 0..<5)]
+    }
 }
-
-
